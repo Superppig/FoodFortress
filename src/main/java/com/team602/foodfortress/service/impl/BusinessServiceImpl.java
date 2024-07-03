@@ -1,5 +1,6 @@
 package com.team602.foodfortress.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.team602.foodfortress.entity.Business;
@@ -17,7 +18,7 @@ public class BusinessServiceImpl extends ServiceImpl<BusinessMapper, Business> i
     }
 
     @Override
-    public int regester(Business business) {
+    public int register(Business business) {
         return baseMapper.insert(business);
     }
 

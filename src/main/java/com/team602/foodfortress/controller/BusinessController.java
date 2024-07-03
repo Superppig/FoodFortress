@@ -44,7 +44,7 @@ public class BusinessController {
 
     @PostMapping("/reg")
     private JsonResult RegesteBusiness(@RequestBody Business business){
-        if(businessService.regester(business)==1){
+        if(businessService.register(business)==1){
             return new JsonResult(true,businessService.getBusinessById(business.getId()),"注册商家成功");
         }
         else {
