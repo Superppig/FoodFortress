@@ -23,6 +23,7 @@ public class User {
     private String image;
     private String phone;
     private String address;
+    private String introduction;
 
     @TableField(fill = FieldFill.INSERT)
     private Date create_time;
